@@ -1,4 +1,5 @@
 .DS_Store
+.gitattributes
 
 # Editor directories and files
 .idea
