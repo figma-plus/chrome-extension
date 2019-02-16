@@ -1,0 +1,31 @@
+{
+	"name": "Figma Plus",
+	"description": "Discover and install 3rd party plugins for Figma.",
+	"author": "jachui@microsoft.com",
+	"version": "0.9.0",
+	"permissions": ["declarativeContent", "storage", "tabs"],
+	"manifest_version": 2,
+	"icons": {
+		"16": "icons/16.png",
+		"48": "icons/48.png",
+		"128": "icons/128.png"
+	},
+	"content_scripts": [
+		{
+			"run_at": "document_end",
+			"matches": [
+				"https://www.figma.com/file/*",
+				"http://www.figma.com/file/*",
+				"https://www.figma.com/files/*",
+				"http://www.figma.com/files/*",
+				"https://www.figma.com/proto/*",
+				"http://www.figma.com/proto/*"
+			],
+			"all_frames": true,
+			"js": ["contentScript.js"]
+		}
+	],
+	"browser_action": {
+		"default_popup": "popup.html"
+	}
+}
