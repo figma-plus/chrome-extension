@@ -1,8 +1,8 @@
 {
 	"name": "Figma Plus",
 	"description": "Discover and install 3rd party plugins for Figma.",
-	"author": "jachui@microsoft.com",
-	"version": "0.9.0",
+	"author": "Figma Plus",
+	"version": "0.9.1",
 	"permissions": ["declarativeContent", "storage", "tabs"],
 	"manifest_version": 2,
 	"icons": {
